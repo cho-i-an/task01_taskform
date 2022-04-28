@@ -6,11 +6,11 @@ window.addEventListener('load', () => {
   	const date = document.querySelector("#input-date");
 
 	form.addEventListener('submit', (e) => {
-		e.preventDefault(); //if the event does not explicitly get handled, it will not proceed the default action
+		e.preventDefault(); // If the event does not explicitly get handled, it will not proceed the default action
 
 		var table = document.getElementById('task-table');
-		var rowCount = table.rows.length; // using rowCount to track the number of rows
-		var row = table.insertRow(rowCount); // to insert 3 data in a new row
+		var rowCount = table.rows.length; // Using rowCount to track the number of rows
+		var row = table.insertRow(rowCount); // To insert 3 data in a new row
 
 		var cell1 = row.insertCell(0); // Details column element
 		cell1.innerHTML = input.value;
