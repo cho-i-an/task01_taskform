@@ -2,8 +2,8 @@
 window.addEventListener('load', () => {
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
-  const priority = document.querySelector("#input-priority");
-  const date = document.querySelector("#input-date");
+	const priority = document.querySelector("#input-priority");
+  	const date = document.querySelector("#input-date");
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault(); //if the event does not explicitly get handled, it will not proceed the default action
@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
 		rowCount += 1;
 		input.value = '';
 
-  });
+  	});
 });
 
 function deleteRow(row_to_be_deleted) { // Delete the row
