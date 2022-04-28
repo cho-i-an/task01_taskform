@@ -21,8 +21,9 @@ window.addEventListener('load', () => {
 		var cell3 = row.insertCell(2); // Date column element
 		cell3.innerHTML = date.value;
 
-		var cell4 = row.insertCell(3);
+		var cell4 = row.insertCell(3); // Add a delete button
 		cell4.innerHTML = '<input type="button" value="Delete" onclick="deleteRow(this)">';
+		
 		rowCount += 1;
 		input.value = '';
 
