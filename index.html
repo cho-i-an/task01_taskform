@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<div class="right_area">
+
+  <head>
+    <title>Task List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- The form container -->
+    <h2 class="mt-4" style="text-align: center">Add a new task</h2>
+    <form class="mt-3" id="new-task-form">
+      <div class="form container-sm border">
+
+        <!-- Details of the task -->
+        <div class="row justify-content-left mt-4">
+          <h4 class="task-content col-sm-3" style="text-align: right" id="task-details">Details</h4>
+          <input class="input-bar col-sm-7" type="text" name="new-task-input" id="new-task-input" placeholder="What do you need to do next?" />
+        </div>
+
+        <!-- Priority of the task -->
+        <div class="row justify-content-left mt-3">
+          <h4 class="task-content col-sm-3" style="text-align: right" id="task-priority">Priority</h4>
+          <select class="input-bar col-sm-7" id="input-priority" name="Priority">
+            <option value="" disabled selected>Select priority</option>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Normal</option>
+            <option>Low</option>
+          </select><br />
+        </div>
+
+        <!-- Date of the task -->
+        <div class="row justify-content-left mt-3">
+          <h4 class="task-content col-sm-3" style="text-align: right" id="task-date">Date</h4>
+          <input class="input-bar col-sm-7" id="input-date" type="date" />
+        </div>
+
+        <p>
+        <div class="col text-center">
+          <input class="btn-new px-4" type="submit" id="new-task-submit" value="Add" />
+        </div>
+        </p>
+
+      </div>
+    </form>
+</div>
+
+<!-- The inputted tasks -->
+<section class="task-list mt-5">
+  <h2 style="text-align: center">Tasks</h2>
+  <div id="tasks">
+  </div>
+
+  <!-- Tasks table -->
+</section>
+<table class="table table-striped container-sm border mt-3 mb-5" id="task-table">
+  <tr>
+    <td>Details</td>
+    <td>Priority</td>
+    <td>Date</td>
+    <td> </td>
+  </tr>
+</table>
+<script src="task01.js"></script>
+</body>
+
+</html>
